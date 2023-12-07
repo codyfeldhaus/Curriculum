@@ -5,14 +5,14 @@ function App() {
   const [registration, setRegistration] = useState({ name: '', eventId: '' });
 
   useEffect(() => {
-    fetch('http://localhost:5000/events')
+    fetch('http://localhost:3030/events')
       .then(response => response.json())
       .then(data => setEvents(data));
   }, []);
 
   const handleRegister = (event) => {
     event.preventDefault();
-    fetch('http://localhost:5000/register', {
+    fetch('http://localhost:3030/register', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(registration)
