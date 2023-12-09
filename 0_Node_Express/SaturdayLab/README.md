@@ -4,24 +4,24 @@
 Build a simple event registration website using Node.js, Express, and React. This project consists of a backend server to handle event data and a React front-end for users to interact with.
 
 ## Project Structure
-- **Backend Folder**: `event-backend`
-  - **Main File**: `server.js`
+- **Backend Folder**: `event-server`
+  - **Main File**: `index.js`
   - **Data Store**: In-memory array for event and registration data.
-- **Frontend Folder**: `event-frontend`
+- **Frontend Folder**: `event-client`
   - **React App**: Created with `create-react-app`.
 
 ## Instructions
 
 ### Backend Setup
 1. **Initialize the Backend Project**:
-   - Create a folder named `event-backend`.
+   - Create a folder named `event-server`.
    - Inside this folder, run:
      ```
      npm init -y
      npm install express
      ```
 
-2. **Create `server.js`**:
+2. **Create `index.js`**:
    - Set up an Express server in this file.
    - Initialize arrays to store event data and registrations.
 
@@ -33,9 +33,9 @@ Build a simple event registration website using Node.js, Express, and React. Thi
 
 ### Frontend Setup
 5. **Initialize the Frontend Project**:
-   - Create a new React app outside the `event-backend` folder:
+   - Navigate to the `event-client` folder and initialize a new React application:
      ```
-     npx create-react-app event-frontend
+     npx create-react-app ./
      ```
 
 6. **Develop Event Display Component**:
@@ -45,7 +45,7 @@ Build a simple event registration website using Node.js, Express, and React. Thi
    - Implement a form in the front-end to register for an event.
 
 8. **Connect Frontend to Backend**:
-   - Use `fetch` API in the React app to interact with the backend.
+   - Use `Axios` API in the React app to interact with the backend.
 
 ### Testing and Debugging
 9. **Run and Test the Application**:
@@ -61,4 +61,4 @@ Build a simple event registration website using Node.js, Express, and React. Thi
     - Add basic error handling on both backend and frontend for a robust application.
 
 ## Getting Started
-Use the provided boilerplate code as a starting point. The backend code goes into the `event-backend/server.js`, and the frontend logic in `event-frontend/src/App.js`.
+Use the provided boilerplate code as a starting point. The backend code goes into the `event-server/index.js`, and the frontend logic in `event-client/src/App.js`.
