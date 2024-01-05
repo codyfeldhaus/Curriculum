@@ -1,0 +1,11 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 20px;
+}
+
+#weatherDisplay {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+}
